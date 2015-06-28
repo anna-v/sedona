@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Sedona</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicon-64x64.png" sizes="64x64">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="container">
+    <header class="header-index">
+      <nav>
+        <ul class="menu">
+          <li><a class="active" href="index.html">Информация</a></li>
+          <li><a class="disabled" href="#">Фото и видео</a></li>
+          <li class="logo"><a href="index.html">Logo</a></li>
+          <li><a href="#" class="disabled">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <main class="main-index">
+      <div class="welcome">
+        <div class="welcome-text"></div>
+        <div class="welcome-mask"><img src="img/index-bgr-mask1200.png" alt=""></div>
+      </div>
+
+      <section class="promo">
+        <div class="promo-header">
+          <p class="promo-header-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="promo-header-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+
+    <div class="row">
+        <div class="col col1">
+          <div class="feature big">
+            <p class="promo-title">Настоящий городок</p>
+            <p class="promo-text number">№1</p>
+            <p class="promo-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+        </div>
+        <div class="col col2">
+          <div class="promo-img-wrapper">
+            <img src="img/promo-img-1.jpg" alt="Седона - настоящий городок">
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col1">
+          <div class="feature small">
+            <p class="promo-title icon accommodation">Жилье</p>
+            <p class="promo-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="feature small icon food">
+            <p class="promo-title">Еда</p>
+            <p class="promo-text">Всегда заказывая фирменный бургер, Вы не разочаруетесь!</p>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="feature small icon souvenirs">
+            <p class="promo-title">Сувениры</p>
+            <p class="promo-text">Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col2">
+          <div class="promo-img-wrapper">
+            <img src="img/promo-img-2.jpg" alt="Мост дьявола">
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="feature big">
+            <p class="promo-title">Там есть мост дьявола</p>
+            <p class="promo-text number">№2</p>
+            <p class="promo-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col1">
+          <div class="feature grey">
+            <p class="promo-title">Небольшая площадь</p>
+            <p class="promo-text number">№3</p>
+            <p class="promo-text">Все достопримеча&shy;тельности находятся очень близко</p>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="feature grey">
+            <p class="promo-title">Красивая дорога</p>
+            <p class="promo-text number">№4</p>
+            <p class="promo-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="feature grey">
+            <p class="promo-title">Мало туристов</p>
+            <p class="promo-text number">№5</p>
+            <p class="promo-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
+    </div>
+
+    </section>
+
+      <section class="search">
+        <p class="search-title">Заинтересовались?</p>
+        <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <div class="map"></div>
+
+        <form action="#" method="get" class="search-form">
+          <h2 class="search-form-title">Поиск гостиницы в Седоне</h2>
+          <div class="search-form-content">
+            <p>
+              <label for="checkin">Дата заезда:</label>
+              <span class="date-span">
+                <input type="text" id="checkin" class="date-input" value="24 апреля 2015">
+                <label for="checkin" class="search-form-calendar">Date</label>
+              </span>
+            </p>
+            <p>
+              <label for="checkout">Дата выезда:</label>
+              <span>
+                <input type="text" id="checkout" class="date-input" value="4 июля 2015">
+                <label for="checkout" class="search-form-calendar">Date</label>
+              </span>
+            </p>
+
+            <p class="adults">
+              <label for="adults">Взрослые:</label>
+              <span class="input-wrapper">
+                <a class="search-form-minus" href="#">Less</a>
+                <input class="people-number" id="adults" type="text" pattern="[0-9]*" value="2" min="0">
+                <a class="search-form-plus" href="#">More</a>
+              </span>
+            </p>
+            <p class="children">
+              <label for="children">Дети:</label>
+              <span class="input-wrapper">
+                <a class="search-form-minus" href="#">Less</a>
+                <input class="people-number" id="children" type="text" pattern="[0-9]*" value="0" min="0">
+                <a class="search-form-plus" href="#">More</a>
+              </span>
+            </p>
+
+            <input type="submit" value="Найти" disabled>
+          </div>
+        </form>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="index">
+      <div class="col col1">
+        <a href="http://instagram.com/" class="hashtag" target="blank">#Visitsedona</a>
+      </div>
+      <div class="col col1">
+        <div class="social">
+          <a href="https://twitter.com/" class="social-icon tw" target="blank">Twitter</a>
+          <a href="https://www.facebook.com/" class="social-icon fb" target="blank">Facebook</a>
+          <a href="http://www.youtube.com/" class="social-icon youtube" target="blank">Youtube</a>
+        </div>
+      </div>
+      <div class="col col1">
+        <p class="copyright">Website by <a href="http://glukhanko.ru/" class="glukhanko" target="blank">Glukhanko</a> for <a href="http://htmlacademy.ru/" class="academy" target="blank">HTML Academy</a></p>
+      </div>
+    </footer>
+  </div> <!-- container closure -->
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+  <script type="text/javascript" src="js/jquery.datepick.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nouislider.all.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

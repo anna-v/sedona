@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Sedona / Hotels</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicon-64x64.png" sizes="64x64">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="container">
+    <header class="static">
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Информация</a></li>
+          <li><a class="disabled" href="#">Фото и видео</a></li>
+          <li class="logo"><a href="index.html">Logo</a></li>
+          <li><a class="disabled" href="#">Карта штата</a></li>
+          <li><a class="active" href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <main class="main">
+
+      <section class="filter">
+
+        <div class="col col2">
+          <form action="#" method="get" class="filter-category">
+            <p class="filter-title">Инфраструктура:</p>
+            <p><input type="checkbox" id="infrastr-1" name="pool" value="pool" checked><label for="infrastr-1">Бассейн</label></p>
+            <p><input type="checkbox" id="infrastr-2" name="parking" value="parking"><label for="infrastr-2">Парковка</label></p>
+            <p><input type="checkbox" id="infrastr-3" name="wifi" value="wifi"><label for="infrastr-3">Wi-fi</label></p>
+          </form>
+
+          <form action="#" method="get" class="filter-category">
+            <p class="filter-title">Тип жилья:</p>
+            <p><input type="checkbox" id="type-1" name="hotel" value="hotel" checked><label for="type-1">Гостиница</label></p>
+            <p><input type="checkbox" id="type-2" name="motel" value="motel" checked><label for="type-2">Мотель</label></p>
+            <p><input type="checkbox" id="type-3" name="apartments" value="apartments" checked><label for="type-3">Апартаменты</label></p>
+          </form>
+        </div>
+
+        <div class="col col1">
+          <div class="filter-price">
+            <p class="filter-title price">Стоимость в сутки (р):</p>
+
+            <div class="filter-price-slider">
+              <div class="price-control">
+                <p class="price-from"><label for="price-from">от</label><input class="min-price" id="price-from" type="number" value="0" min="0" max="5000" pattern="[0-9]*"></p>
+                <p class="price-to"><label for="price-to">до</label><input class="max-price" id="price-to" type="number" value="3000" min="0" max="5000" pattern="[0-9]*"></p>
+              </div>
+
+            <div class="range-control">  <!-- noUi slider is here -->
+              <div class="scale"><div class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="results">
+
+        <div class="results-wrapper">
+          <div class="sorting">
+            <div class="sorting-text">
+              <p class="results-title">Найдено: <span class="quantity">3</span></p>
+              <p class="sorting-title">Сортировка:</p>
+              <ul class="sorting-list">
+                <li><a class="sorting-active disabled" href="#">По цене</a></li>
+                <li><a class="disabled" href="#">По типу</a></li>
+                <li><a class="disabled" href="#">По рейтингу</a></li>
+              </ul>
+            </div>
+            <div class="sorting-controls">
+              <a class="arrow ascending" href="#"></a>
+              <a class="arrow descending down-active" href="#"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+
+          <div class="item">
+            <div class="results-wrapper">
+              <div class="item-wrapper">
+                <div class="itempic-wrapper"><img src="img/hotel-img1.jpg" alt="Amara Resort & Spa"></div>
+
+                <div class="item-description">
+                  <a href="#" class="item-title">Amara Resort & Spa</a>
+                  <div class="item-text">
+                    <p>Гостиница</p>
+                    <p>от 3500 р.</p>
+                  </div>
+                  <p class="item-btns">
+                    <a href="#" class="item-btn details">Подробнее</a>
+                    <a href="#" class="item-btn book">Забронировать</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="item-rating">
+                <div class="rating-stars">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="rating-text">Рейтинг: 8,5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="results-wrapper">
+              <div class="item-wrapper">
+                <div class="itempic-wrapper"><img src="img/hotel-img2.jpg" alt="Desert Quail Inn"></div>
+
+                <div class="item-description">
+                  <a href="#" class="item-title">Desert Quail Inn</a>
+                  <div class="item-text">
+                    <p>Мотель</p>
+                    <p>от 2000 р.</p>
+                  </div>
+                  <p class="item-btns">
+                    <a href="#" class="item-btn details">Подробнее</a>
+                    <a href="#" class="item-btn book">Забронировать</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="item-rating">
+                <div class="rating-stars">
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="rating-text">Рейтинг: 8,9</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="results-wrapper">
+              <div class="item-wrapper">
+                <div class="itempic-wrapper"><img src="img/hotel-img3.jpg" alt="Villas at Poco Diablo"></div>
+
+                <div class="item-description">
+                  <a href="#" class="item-title">Villas at Poco Diablo</a>
+                  <div class="item-text">
+                    <p class="item-description">Апартаменты</p>
+                    <p>от 4000 р.</p>
+                  </div>
+                  <p class="item-btns">
+                    <a href="#" class="item-btn details">Подробнее</a>
+                    <a href="#" class="item-btn book">Забронировать</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="item-rating">
+                <div class="rating-stars">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="rating-text">Рейтинг: 9,2</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="col col1">
+        <a href="#" class="hashtag" target="_blank">#Visitsedona</a>
+      </div>
+      <div class="col col1">
+        <div class="social">
+          <a href="https://twitter.com/" class="social-icon tw" target="_blank">Twitter</a>
+          <a href="https://www.facebook.com/" class="social-icon fb" target="_blank">Facebook</a>
+          <a href="http://www.youtube.com/" class="social-icon youtube" target="_blank">Youtube</a>
+        </div>
+      </div>
+      <div class="col col1">
+        <p class="copyright">Website by <a href="http://glukhanko.ru/" class="glukhanko" target="_blank">Glukhanko</a> for <a href="http://htmlacademy.ru/" class="academy" target="_blank">HTML Academy</a></p>
+      </div>
+    </footer>
+  </div> <!-- container closure -->
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nouislider.all.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
