@@ -321,7 +321,7 @@ body {
   display: table;
   height: 100%;
   min-width: 768px;
-  /*width: 100%;*/
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   background: #ffffff;
@@ -371,7 +371,6 @@ header, nav, section, article, aside, footer, main {
 main {
   display: block;
   padding: 56px 0 120px;
-  /*padding-top: 56px;*/
 }
 
 .main-index {
@@ -404,8 +403,6 @@ header {
 
 .header-index.fixed {
   position: fixed;
-  /*top: 0;*/
-  /*transition: top 0.4s linear;*/
   box-shadow: 0px 0px 15px 1px rgba(0,1,1,0.1);
   border-radius: 1px;
 }
@@ -1138,36 +1135,6 @@ li {
   box-sizing: content-box;
 }
 
-/*.noUi-stacking .noUi-handle {*/
-/* This class is applied to the lower origin when
-   its values is > 50%. */
-  /*z-index: 10;*/
-/*}*/
-
-/*.noUi-stacking + .noUi-origin {*/
-/* Fix stacking order in IE7, which incorrectly
-   creates a new context for the origins. */
-  /**z-index: -1;*/
-/*}*/
-
-/*.noUi-state-tap .noUi-origin {
--webkit-transition: left 0.3s, top 0.3s;
-  transition: left 0.3s, top 0.3s;
-}*/
-
-/*.noUi-state-drag * {
-  cursor: inherit !important;
-}*/
-
-
- /* PAINTING AND PERFORMANCE */
-
- /*Browsers can paint handles in their own layer. */
-/*.noUi-base {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}*/
-
 /* Slider size and handle placement */
 .noUi-horizontal {
   height: 2px;
@@ -1274,7 +1241,7 @@ li {
 }
 
 .sorting-list {
-  width: 70%;
+  width: 55%;
   margin-top: 2px;
 }
 
@@ -1501,14 +1468,11 @@ opacity: 1;
 @media screen and (min-width: 1200px) {
 
   .container {
-    /*display: table;*/
     width: 1200px;
-    /*height: 100%;*/
-    /*min-height: 100vh;*/
+    position: relative;
+    z-index: 20;
     -webkit-box-shadow: 0 0 15px 5px rgba(0,1,1,0.2);
             box-shadow: 0 0 15px 5px rgba(0,1,1,0.2);
-    z-index: 20;
-    position: relative;
   }
 
   body {
