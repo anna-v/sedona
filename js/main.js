@@ -3,7 +3,8 @@
   var tempScrollTop, currentScrollTop = 0,
       header = $('.header-index'),
       main = $('.main-index'),
-      flag = true;
+      flag = true,
+      current, input;
 
   $(window).scroll(function(){
     currentScrollTop = $(window).scrollTop();
@@ -46,14 +47,14 @@
   $(".range-control").Link('lower').to($('#price-from'));
   $(".range-control").Link('upper').to($('#price-to'));
 
-  // Scripts for the search form on the main page:
+  // Search form on the main page:
   $('#checkin').prop('readonly', true);
   $('#checkout').prop('readonly', true);
 
   $('.search-form-minus').on('click',function(event) {
     event.preventDefault();
-    var current = +$(this).siblings('input').val();
-    var input = $(this).siblings('input');
+    current = +$(this).siblings('input').val();
+    input = $(this).siblings('input');
     $(input).val(current - 1);
 
     if (current < 1) {
@@ -62,10 +63,9 @@
   });
 
   $('.search-form-plus').on('click',function(event) {
-    /* Act on the event */
     event.preventDefault();
-    var current = +$(this).siblings('input').val();
-    var input = $(this).siblings('input');
+    current = +$(this).siblings('input').val();
+    input = $(this).siblings('input');
     $(input).val(current + 1);
   });
 
